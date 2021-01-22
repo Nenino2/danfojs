@@ -1,3 +1,4 @@
+import { DataFrame } from "./frame";
 /**
  * Generate one hot encoding for categorical variable in arrays |Serie | and Dataframe
  * @param {kwargs} kwargs { data : Array | Series | DataFrame,
@@ -6,5 +7,6 @@
  *                          columns: [Array] columns to be encoded in DataFrame.
  * }
  */
-export function get_dummies(kwargs?: any): DataFrame;
-import { DataFrame } from "./frame";
+declare function get_dummy(kwargs?: {}): DataFrame;
+export declare const get_dummies: typeof get_dummy;
+export {};
